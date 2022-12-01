@@ -1,13 +1,14 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
-    namespace 'com.example.test1'
+    namespace 'com.example.NUGU_can_Art'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.test1"
+        applicationId "com.example.NUGU_can_Art"
         minSdk 28
         targetSdk 32
         versionCode 1

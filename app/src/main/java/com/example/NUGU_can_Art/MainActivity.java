@@ -1,4 +1,4 @@
-package com.example.test1;
+package com.example.NUGU_can_Art;
 
 import androidx.appcompat.app.AppCompatActivity;
 
