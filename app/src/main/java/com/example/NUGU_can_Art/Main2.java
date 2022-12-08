@@ -92,7 +92,7 @@ public class Main2 extends AppCompatActivity implements View.OnClickListener{
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Toast.makeText(Main2.this, "Authentication success.",
+                            Toast.makeText(Main2.this, "login success!",
                                     Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
                             progressBar.setVisibility(View.GONE);
@@ -101,7 +101,7 @@ public class Main2 extends AppCompatActivity implements View.OnClickListener{
                         } else {
                             // If sign in fails, display a message to the user.
 
-                            Toast.makeText(Main2.this, "Authentication failed.",
+                            Toast.makeText(Main2.this, "login failed!",
                                     Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }

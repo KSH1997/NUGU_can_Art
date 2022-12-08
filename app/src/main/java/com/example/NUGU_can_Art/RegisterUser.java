@@ -99,13 +99,13 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(RegisterUser.this, "Authentication success.",
+                            Toast.makeText(RegisterUser.this, "register success!",
                                     Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
 
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(RegisterUser.this, "Authentication failed.",
+                            Toast.makeText(RegisterUser.this, "register failed!",
                                     Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
                         }
