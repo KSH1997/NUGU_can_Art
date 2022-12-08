@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +23,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class RegisterUser extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth;
-    private TextView banner, registerUser;
+    private TextView  registerUser;
+    private ImageView banner;
     private EditText editTextEmail, editTextPassword;
     private ProgressBar progressBar;
 
@@ -34,7 +36,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        banner = (TextView) findViewById(R.id.banner);
+        banner = (ImageView) findViewById(R.id.banner);
         banner.setOnClickListener(this);
 
         registerUser = (Button) findViewById(R.id.registerUser);
